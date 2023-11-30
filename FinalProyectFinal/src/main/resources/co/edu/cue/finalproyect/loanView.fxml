@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="797.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.finalproyect.controller.LoanCarViewController">
+   <children>
+      <ImageView fx:id="imageCar" fitHeight="137.0" fitWidth="200.0" layoutX="36.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/kia.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameUser" contentDisplay="CENTER" layoutX="399.0" layoutY="70.0" prefHeight="32.0" prefWidth="125.0" style="-fx-text-fill: #ffffff;" text="Nombre Usuario" textFill="WHITE" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="idUser" layoutX="399.0" layoutY="146.0" prefHeight="25.0" prefWidth="102.0" text="Documento" textFill="WHITE" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="nameCar" contentDisplay="CENTER" layoutX="273.0" layoutY="216.0" prefHeight="17.0" prefWidth="189.0" style="-fx-text-fill: #ffffff;" text="Nombre Carro" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="priceCar" layoutX="271.0" layoutY="265.0" text="Precio " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="brandCar" layoutX="272.0" layoutY="313.0" text="Marca" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="typeCount" layoutX="210.0" layoutY="481.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="numberCount" layoutX="210.0" layoutY="440.0" prefHeight="25.0" prefWidth="209.0" promptText="numero de la tarjeta" />
+      <Label layoutX="55.0" layoutY="443.0" text="Numero de cuenta " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="81.0" layoutY="483.0" text="Tipo de cuenta " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="377.0" layoutY="532.0" mnemonicParsing="false" onAction="#readyLoan" prefHeight="32.0" prefWidth="134.0" style="-fx-background-color: #EC1616;" text="Realizar Prestamo">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="151.0" fitWidth="134.0" layoutX="654.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/logo.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="placeAChoisebox" layoutX="210.0" layoutY="361.0" prefHeight="25.0" prefWidth="209.0" />
+      <ChoiceBox fx:id="placeBChoisebox" layoutX="210.0" layoutY="405.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="43.0" layoutY="363.0" text="Lugar donde se recoge " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="407.0" text="Lugar donde se entrega" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="20.0" layoutY="22.0" mnemonicParsing="false" onAction="#returnSelect" style="-fx-background-color: #EC1616;" text="Atrás " />
+      <Button layoutX="542.0" layoutY="71.0" mnemonicParsing="false" onAction="#editUser" prefHeight="30.0" prefWidth="36.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/editar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label contentDisplay="CENTER" layoutX="517.0" layoutY="309.0" text="Añadir articulos adicionales" textAlignment="CENTER" textFill="#cf6f6f" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <CheckBox fx:id="checkBabyChair" layoutX="609.0" layoutY="416.0" mnemonicParsing="false" />
+      <ImageView fitHeight="88.0" fitWidth="72.0" layoutX="522.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/asiento.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBicycleCarrier" layoutX="751.0" layoutY="415.0" mnemonicParsing="false" />
+      <ImageView fitHeight="88.0" fitWidth="102.0" layoutX="636.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/poratabicic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="516.0" layoutY="349.0" text="Silla para bebes" textFill="WHITE" />
+      <Label layoutX="531.0" layoutY="478.0" text="\$ 50000" textFill="WHITE" />
+      <Label layoutX="646.0" layoutY="349.0" text="Porta Bicicletas " textFill="WHITE" />
+      <Label layoutX="666.0" layoutY="478.0" text="\$ 25000" textFill="WHITE" />
+      <Label layoutX="274.0" layoutY="76.0" text="Nombre Uuario: " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="149.0" text="Documento:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="216.0" text="Nombre Carro:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="265.0" text="Precio carro por día:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="313.0" text="Marca del Carro:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

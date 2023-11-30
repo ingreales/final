@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="766.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.finalproyect.controller.ListUserViewController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="106.0" layoutX="662.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="24.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #EC1616;" text="Regresar" />
+      <Label layoutX="207.0" layoutY="42.0" text="Lista de clientes" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="48.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="39.0" layoutY="116.0" prefHeight="414.0" prefWidth="689.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.0" prefWidth="694.0" style="-fx-background-color: #831A1A;">
+               <children>
+                  <TableView fx:id="tableUser" prefHeight="425.0" prefWidth="696.0" style="-fx-background-color: #831A1A;">
+                    <columns>
+                      <TableColumn fx:id="nameUser" prefWidth="247.2000511288643" text="Nombre" />
+                      <TableColumn fx:id="idUser" minWidth="0.0" prefWidth="229.59999084472656" text="Identificación" />
+                        <TableColumn fx:id="cellphoneUser" prefWidth="200.0" text="Celular" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="860.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.cue.finalproyect.controller.StartViewController">
+   <children>
+      <Label layoutX="366.0" layoutY="45.0">
+         <font>
+            <Font name="Broadway" size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cityChoise" layoutX="311.0" layoutY="217.0" prefHeight="25.0" prefWidth="339.0" />
+      <DatePicker fx:id="sinceDate" layoutX="144.0" layoutY="311.0" prefHeight="60.0" prefWidth="219.0" promptText="Desde" />
+      <DatePicker fx:id="untilDate" layoutX="431.0" layoutY="311.0" prefHeight="60.0" prefWidth="219.0" promptText="Hasta" />
+      <ChoiceBox fx:id="countryChoise" layoutX="313.0" layoutY="137.0" prefHeight="25.0" prefWidth="339.0" />
+      <Button layoutX="375.0" layoutY="463.0" mnemonicParsing="false" onAction="#searchResult" opacity="0.93" prefHeight="29.0" prefWidth="110.0" style="-fx-background-color: #EC1616;" text="Buscar">
+         <effect>
+            <Glow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/lupa.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="35.0" layoutY="33.0" mnemonicParsing="false" onAction="#loginAdmi" style="-fx-background-color: #000000;" text="Administrativo" textFill="#d75959" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="144.0" layoutY="216.0" text="Seleccion la ciudad" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="136.0" text="País" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="134.0" fitWidth="120.0" layoutX="740.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="337.0" layoutY="33.0" text="Bienvenidos" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
